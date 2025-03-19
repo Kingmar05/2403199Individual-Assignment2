@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - King's Watchtower</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="logo">
+            <img src="../Assets/Logo5.png" alt="King's Watchtower Logo" class="logo-image">
+        </div>
+        <h2>Login</h2>
+        <form id="login-form">
+            <input type="text" id="username" placeholder="Username" required>
+            <input type="password" id="password" placeholder="Password" required minlength="8">
+            <button type="submit">Login</button>
+        </form>
+    </div>
+    <script>
+        document.getElementById("login-form").addEventListener("submit", function(event) {
+            event.preventDefault();
+            localStorage.setItem("loggedIn", "true"); // Store login status
+            window.location.href = "index.html"; // Redirect to home page
+        });
+    </script>
+</body>
+</html>

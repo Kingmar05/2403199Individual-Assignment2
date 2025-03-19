@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - King's Watchtower</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        if (!localStorage.getItem("loggedIn")) {
+            window.location.href = "login.html"; // Redirect to login if not logged in
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <!-- Image Logo -->
+            <div class="logo">
+                <img src="../Assets/Logo5.png" alt="King's Watchtower Logo" class="logo-image">
+            </div>
+            <!-- Navigation Bar -->
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="products.html">Products</a>
+                <a href="invoice.html">Invoice</a>
+                <a href="about.html">About Us</a>
+                <a href="login.html" id="logout">Logout</a>
+            </nav>
+        </div>
+    </header>
+    <div class="container">
+        <h2>About Us</h2>
+        <p><strong>Creator Name:</strong>Kevin Martin</p>
+        <p><strong>ID Number:</strong> 2403199</p>
+        <p><strong>Module Code:</strong> CIT2011</p>
+        <p><strong>Email:</strong> k01660147@gamil.com</p>
+        <p><strong>Store Name:</strong> King's Watchtower</p>
+        <p><strong> Day/Time of the Class:</strong>Tuesday, 5:00 p.m to 7:00 p.m</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

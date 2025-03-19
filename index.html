@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - King's Watchtower</title>
+    <!-- Link to the external CSS file -->
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        // Redirect to login if not logged in
+        if (!localStorage.getItem("loggedIn")) {
+            window.location.href = "login.html";
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <!-- Image Logo -->
+            <div class="logo">
+                <img src="../Assets/Logo5.png" alt="King's Watchtower Logo" class="logo-image">
+            </div>
+            <!-- Navigation Bar -->
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="products.html">Products</a>
+                <a href="invoice.html">Invoice</a>
+                <a href="about.html">About Us</a>
+                <a href="login.html" id="logout">Logout</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <h1>Welcome to King's Watchtower</h1>
+        <p>Your one-stop shop for premium watches.</p>
+        <p>At King's Watchtower, we pride ourselves on offering a curated selection of the finest watches available. Our collection features a variety of styles, from classic to contemporary, ensuring that there is something for everyone. We believe that a watch is more than just a timepiece; it is a statement of style and sophistication.</p>
+        <p>Why choose us?</p>
+        <ul>
+            <li>High-quality products: We source our watches from reputable manufacturers known for their craftsmanship and attention to detail.</li>
+            <li>Exceptional customer service: Our team is dedicated to providing you with the best shopping experience possible. We are here to assist you with any questions or concerns you may have.</li>
+            <li>Competitive pricing: We offer competitive prices on all our products, ensuring that you get the best value for your money.</li>
+            <li>Secure shopping: Our website is equipped with the latest security measures to protect your personal information and ensure a safe shopping experience.</li>
+        </ul>
+        <p>Thank you for choosing King's Watchtower. We are confident that you will find the perfect watch to suit your style and needs.</p>
+        <div class="images">
+            <img src="Assets/Blue Analog Watch _ Factory US.jpeg" alt="Blue Analog" class="product-image">
+            <img src="Assets/Rotary GB05485_05 Men's Avenger Sport _ Chronograph _ Blue Watch.jpeg" alt="Rotary Watch" class="product-image">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice - King's Watchtower</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        if (!localStorage.getItem("loggedIn")) {
+            window.location.href = "login.html"; // Redirect to login if not logged in
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <!-- Image Logo -->
+            <div class="logo">
+                <img src="../Assets/Logo5.png" alt="King's Watchtower Logo" class="logo-image">
+            </div>
+            <!-- Navigation Bar -->
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="products.html">Products</a>
+                <a href="invoice.html">Invoice</a>
+                <a href="about.html">About Us</a>
+                <a href="login.html" id="logout">Logout</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <h1>Invoice</h1>
+        <table id="invoice-table">
+            <thead>
+                <tr>
+                    <th>Details</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody id="invoice-list">
+                <!-- Invoice items will be dynamically added here -->
+            </tbody>
+        </table>
+        <p id="subtotal"></p>
+        <p id="tax"></p>
+        <p id="total"></p>
+        <button id="checkout-button">Checkout</button>
+        <button id="clear-invoice-button">Clear Invoice</button>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <p>Contact Information: info@kingswatchtower.com | +1 234 567 890</p>
+            <p>Address: 123 Watchtower Lane, Time City, TX 78901</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
